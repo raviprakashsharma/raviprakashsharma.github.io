@@ -1,6 +1,6 @@
 // page loaded
 jQuery(document).ready(function($) {
-        $.ajax('http://jsonplaceholder.typicode.com/posts', {
+        jQuery.ajax('http://jsonplaceholder.typicode.com/posts', {
 	  method: 'GET'
 	}).then(function(data) {
 	  console.log(data);
