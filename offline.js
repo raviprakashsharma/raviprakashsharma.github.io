@@ -1,5 +1,10 @@
 // page loaded
 jQuery(document).ready(function($) {
+        $.ajax('http://jsonplaceholder.typicode.com/posts', {
+	  method: 'GET'
+	}).then(function(data) {
+	  console.log(data);
+	});
 
 	// form data saving
 	$("#mainform").submit(lib.Save);
